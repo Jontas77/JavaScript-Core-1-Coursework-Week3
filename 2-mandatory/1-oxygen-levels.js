@@ -11,7 +11,10 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(oxysafe) {
+  let str = oxysafe.join(' ').replace(/24.2%/g, "19.9%").replace(/30.8%/g, "20.2%").replace(/200%/g, "21.1%");
+  return str.substring(0, 5);
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

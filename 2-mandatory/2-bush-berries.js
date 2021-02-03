@@ -21,7 +21,12 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function bushChecker() {}
+function bushChecker(berries) {
+  let safe = berries.every(berry => berry ==='pink');
+  return safe;
+}
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -44,13 +49,13 @@ function test(test_name, actual, expected) {
 }
 
 test(
-  "bushChecker funtion works - case 1",
+  "bushChecker function works - case 1",
   bushChecker(bushBerryColours1),
   "Toxic! Leave bush alone!"
 );
 
 test(
-  "bushChecker funtion works - case 1",
+  "bushChecker function works - case 1",
   bushChecker(bushBerryColours2),
   "Bush is safe to eat from"
 );
