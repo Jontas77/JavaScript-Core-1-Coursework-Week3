@@ -5,8 +5,9 @@
 */
 
 let statement = "I like programming and dogs";
+console.log(statement.indexOf('and'));
 
-statement = statement.substring();
+statement = statement.substring(0, 19);
 
 console.log(statement);
 
