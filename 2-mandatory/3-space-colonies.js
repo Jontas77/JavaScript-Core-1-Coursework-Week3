@@ -15,7 +15,9 @@
   
 */
 
-function colonisers() {}
+function colonisers(team) {
+ return team.filter(member => member[0] === 'A' && member.includes('family'));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -22,12 +22,13 @@
 */
 
 function bushChecker(berries) {
-  let safe = berries.every(berry => berry ==='pink');
-  return safe;
+  if (berries.some(berry => berry !== "pink")) {
+    return "Toxic! Leave bush alone!";
+  }
+  else {
+    return "Bush is safe to eat from";
+  }
 }
-
-
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 let bushBerryColours1 = ["pink", "pink", "pink", "neon", "pink", "transparent"];
